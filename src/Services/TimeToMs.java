@@ -14,8 +14,8 @@ public class TimeToMs {
         long second = (duration / 1000) % 60;
         long minute = (duration / (1000 * 60)) % 60;
         long hour = (duration / (1000 * 60 * 60)) % 24;
-        long msec = (duration - (second * 1000));
-        return String.format("%02d:%02d:%02d,%02d", hour, minute, second, msec);
+//        long msec = (duration - (second * 1000));
+        return String.format("%02d:%02d:%02d", hour, minute, second);
     }
 
 }
