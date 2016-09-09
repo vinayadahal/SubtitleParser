@@ -11,7 +11,8 @@ public class SubtitleParser {
 //        String fileName = args[0];
 //        String time = args[1];
         StringBuilder text = new FileLoader().loadSrt("D:\\sub.srt");
-        new ParseSrt().parse(text, new TimeToMs().srtTimeFormatter(57000));
+//        new ParseSrt().parse(text, new TimeToMs().srtTimeFormatter(57000));
+        new ParseSrt().parse(text, "01:25:36");
     }
 
 }
